@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900&display=swap');
+
+:root {
+    --main-accent-color: #10bd97;
+    --section-title-color-dark: #37474f;
+    --body-color: #495057;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2.6rem;
+    line-height: 4rem;
+    font-weight: 800;
+}
+
+.btn-white {
+    border: 2px solid #ffffff;
+    border-radius: 2rem;
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: lowercase;
+    font-size: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.btn-white:hover {
+    background-color: #ffffff;
+    color: var(--main-accent-color);
+    border: 2px solid #ffffff;
+}
+
+
+.section-title {
+    position: relative;
+}
+
+h2.section-title-heading {
+    color: var(--section-title-color-dark);
+    padding-top: 2rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    border-bottom: 2px solid var(--main-accent-color);
+    width: 8%;
+    top: 80px;
+}
+
+.section-title:hover::after {
+    width: 12%;
+    transition: all 0.6s ease-out;
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+
+}
+
+
+
+
+
+.navbar {
+    padding-top: 1.2rem;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #5ed310;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: .85rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #27778b;
+}
+
+.navbar.active {
+    background-color: rgba(0,172,217, 0.7);
+    box-shadow: 1px 2px 10px rgba(0,0,0,0.1);
+}
+
+
+
+#hero {
+    background-image: linear-gradient(to right, rgba(19, 167, 39, 0.445), rgba(105,240,174, 0.52)), url('../img/hero-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 8rem;
+    padding-bottom: 6rem;
+    position: relative;
+}
+
+#hero::after {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 15%;
+    transform: skewY(-2deg);
+    transform-origin: bottom right;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+.main-hero-content h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: .11rem;
+}
+
+.main-hero-content p {
+    color: #ffffff;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+.image-box img {
+    position: absolute;
+    top: 4rem;
+    z-index: 1;
+}
+
+
+#about i {
+    color: var(--main-accent-color);
+}
+
+#about h3 {
+    color: var(--section-title-color-dark);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+#about p {
+    color: var(--body-color);
+    font-size: 1rem;
+    line-height: 1.7rem;
+}
+
+#about {
+    position: relative;
+    padding-bottom: 8rem;
+}
+
+#about::after {
+    content: '';
+    position: absolute;
+    background-color: #fafafa;
+    width: 100%;
+    height: 15%;
+    transform: skewY(-2deg);
+    transform-origin: bottom right;
+    bottom: -50px;
+    right: 0;
+    left: 0;
+}
+
+
+#contact {
+    background-color: #f0f1f3;
+    padding-bottom: 5rem;
+    padding-top: 8rem;
+    position: relative;
+}
+
+#contact::before {
+    content: '';
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 20%;
+    transform: skewY(-2deg);
+    transform-origin: top right;
+    top: -6rem;
+    right: 0;
+    left: 0;
+}
+
+.btn-contact {
+    background: linear-gradient(to right, rgba(0,172,217, 0.62), rgba(105,240,174, 0.52));
+    padding: .5rem 2.2rem;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 2rem;
+    border: none;
+}
+
+.btn-contact:hover {
+    background: #ffffff;
+    color: rgba(0,172,217, 0.62);
+    border: 2px solid rgba(0,172,217, 0.62);
+}
+
+#contact .contact-details ul li {
+    padding-bottom: .8rem;
+}
+
+#contact .contact-details ul li i {
+    color: rgba(0,172,217, 0.62);
+}
+
